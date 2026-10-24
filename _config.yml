@@ -23,3 +23,5 @@ plugins:
   - jekyll-sitemap
   - jekyll-feed
   - jekyll-seo-tag
+url: "https://edancas28.github.io"
+baseurl: "/practica-jekyll"
