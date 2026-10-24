@@ -1,0 +1,17 @@
+---
+layout: default
+---
+<h1>{{ page.name }}</h1>
+<h2>{{ page.position }}</h2>
+
+{{ content }}
+
+<h2>Publicaciones</h2>
+<ul>
+  {% assign articles = site.posts | where: "author", page.short_name %}
+  {% for article in articles %}
+    <li>
+      <a href="{{ article.url | relative_url }}">{{ article.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
